@@ -1,4 +1,9 @@
+import sys
+
 def saludar(nombre):
     print(f'Hola, {nombre}!')
 
-saludar('mundo')
+if len(sys.argv) > 1:
+    saludar(sys.argv[1])
+else:
+    saludar('mundo')
